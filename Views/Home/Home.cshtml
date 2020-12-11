@@ -26,7 +26,22 @@
                 <td>@m.ScreeningTime.ToLongDateString() @@ @m.ScreeningTime.ToShortTimeString()</td>
                 <td>@m.Guests.Count</td>
                 <td>
-                    Hello
+                    @if (ViewBag.User.UserId == m.Organizer.UserId)
+                    {
+                        <a class="btn btn-warning">Cancel</a>
+                    }
+                    else
+                    {
+                        // Query to see if they are watching
+                        if (m.Guests.Any(w => w.UserId == ViewBag.User.userId))
+                        {
+                            <a class="btn btn-outline-dark">Back Out</a>
+                        }
+                        else
+                        {
+                            <a class="btn btn-outline-success">RSVP</a>
+                        }
+                    }
                 </td>
             </tr>
         }
