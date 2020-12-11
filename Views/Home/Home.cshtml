@@ -12,6 +12,7 @@
         <th>Title</th>
         <th>Genre</th>
         <th>Release Year</th>
+        <th>Screen Start Time</th>
         <th># of Guests</th>
         <th>Actions</th>
     </thead>
@@ -22,6 +23,7 @@
                 <td>@m.Title</td>
                 <td>@m.Genre</td>
                 <td>@m.Year</td>
+                <td>@m.ScreeningTime.ToLongDateString() @@ @m.ScreeningTime.ToShortTimeString()</td>
                 <td>@m.Guests.Count</td>
                 <td>
                     Hello

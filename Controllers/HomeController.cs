@@ -104,6 +104,24 @@ namespace cinemapandas.Controllers
             }
             return View();
         }
+        [HttpPost("movie/create")]
+        public IActionResult CreateMovie(Movie newMovie)
+        {
+            User current = GetUser();
+            if(current == null)
+            {
+                return Redirect("/");
+            }
+
+            if(ModelState.IsValid)
+            {
+                newMovie.UserId = current.UserId;
+                _context.Movies.Add(newMovie);
+                _context.SaveChanges();
+                return RedirectToAction("Home");
+            }
+            return View("NewMovie");
+        }
         [HttpGet ("logout")]
         public IActionResult Logout ()
         {

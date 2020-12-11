@@ -64,3 +64,4 @@
 /Users/nhannguyen/Desktop/cinemapandasUpdate/obj/Debug/netcoreapp2.2/cinemapandas.pdb
 /Users/nhannguyen/Desktop/cinemapandasUpdate/obj/Debug/netcoreapp2.2/cinemapandas.genruntimeconfig.cache
 /Users/nhannguyen/Desktop/cinemapandasUpdate/obj/Debug/netcoreapp2.2/cinemapandas.csproj.CopyComplete
+/Users/nhannguyen/Desktop/cinemapandasUpdate/obj/Debug/netcoreapp2.2/Razor/Views/Home/NewMovie.cshtml.g.cs
