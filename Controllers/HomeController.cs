@@ -8,14 +8,19 @@ using Microsoft.Extensions.Logging;
 using cinemapandas.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Http;
+using Microsoft.EntityFrameworkCore;
 
-namespace cinemapandas4.Controllers
+namespace cinemapandas.Controllers
 {
     public class HomeController : Controller
     {
         private MyContext _context {get; set;}
         private PasswordHasher<User> regHasher = new PasswordHasher<User>();
         private PasswordHasher<LoginUser> logHasher = new PasswordHasher<LoginUser>();
+        public User GetUser()
+        {
+            return _context.Users.FirstOrDefault(u => u.UserId == HttpContext.Session.GetInt32("userId"));
+        }
         public HomeController(MyContext context)
         {
             _context = context;
@@ -76,12 +81,18 @@ namespace cinemapandas4.Controllers
         [HttpGet("home")]
         public IActionResult Home()
         {
-            int? userId = HttpContext.Session.GetInt32("userId");
-            if(userId == null)
+            User current = GetUser();
+            if(current == null)
             {
                 return Redirect("/");
             }
-            return View();
+            ViewBag.User = current;
+            List<Movie> AllMovies = _context.Movies
+                                            .Include(m => m.Organizer)
+                                            .Include(m => m.Guests)
+                                            .ThenInclude(wp => wp.MovieGoer)
+                                            .ToList();
+            return View(AllMovies);
         }
         [HttpGet ("logout")]
         public IActionResult Logout ()
