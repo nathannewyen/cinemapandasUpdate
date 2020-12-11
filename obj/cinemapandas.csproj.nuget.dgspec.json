@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/nhannguyen/Desktop/cinemapandas/cinemapandas.csproj": {}
+    "/Users/nhannguyen/Desktop/cinemapandasUpdate/cinemapandas.csproj": {}
   },
   "projects": {
-    "/Users/nhannguyen/Desktop/cinemapandas/cinemapandas.csproj": {
+    "/Users/nhannguyen/Desktop/cinemapandasUpdate/cinemapandas.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/nhannguyen/Desktop/cinemapandas/cinemapandas.csproj",
+        "projectUniqueName": "/Users/nhannguyen/Desktop/cinemapandasUpdate/cinemapandas.csproj",
         "projectName": "cinemapandas",
-        "projectPath": "/Users/nhannguyen/Desktop/cinemapandas/cinemapandas.csproj",
+        "projectPath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/cinemapandas.csproj",
         "packagesPath": "/Users/nhannguyen/.nuget/packages/",
-        "outputPath": "/Users/nhannguyen/Desktop/cinemapandas/obj/",
+        "outputPath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -66,10 +66,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.403/RuntimeIdentifierGraph.json"
         }
       }
     }

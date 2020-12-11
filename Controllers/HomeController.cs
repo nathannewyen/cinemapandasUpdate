@@ -94,6 +94,16 @@ namespace cinemapandas.Controllers
                                             .ToList();
             return View(AllMovies);
         }
+        [HttpGet("movie/new")]
+        public IActionResult NewMovie()
+        {
+            User current = GetUser();
+            if(current == null)
+            {
+                return Redirect("/");
+            }
+            return View();
+        }
         [HttpGet ("logout")]
         public IActionResult Logout ()
         {

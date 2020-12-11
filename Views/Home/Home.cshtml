@@ -1,7 +1,32 @@
+@model List<Movie>
+
 <div class="jumbotron red-panda">
     <h1>Cinema Pandas are coming soon...</h1>
 </div>
-
+<a href="/logout">Log out</a>
 <hr>
 <h1>Welcome @ViewBag.User.Name!</h1>
-<a href="/logout">Log out</a>
+
+<table class="table border border-danger">
+    <thead class="bg-danger text-light">
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Release Year</th>
+        <th># of Guests</th>
+        <th>Actions</th>
+    </thead>
+    <tbody>
+        @foreach (Movie m in Model)
+        {
+            <tr>
+                <td>@m.Title</td>
+                <td>@m.Genre</td>
+                <td>@m.Year</td>
+                <td>@m.Guests.Count</td>
+                <td>
+                    Hello
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

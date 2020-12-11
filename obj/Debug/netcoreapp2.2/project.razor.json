@@ -1,5 +1,5 @@
 {
-  "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/cinemapandas.csproj",
+  "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/cinemapandas.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-2.1",
     "LanguageVersion": "2.1",
@@ -1872,48 +1872,53 @@
   "RootNamespace": "cinemapandas",
   "Documents": [
     {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Shared/_ValidationScriptsPartial.cshtml",
-      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Home/_Register.cshtml",
-      "TargetPath": "Views\\Home\\_Register.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Home/_Login.cshtml",
-      "TargetPath": "Views\\Home\\_Login.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Shared/_Layout.cshtml",
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Shared/_Layout.cshtml",
       "TargetPath": "Views\\Shared\\_Layout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/_ViewStart.cshtml",
-      "TargetPath": "Views\\_ViewStart.cshtml",
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Shared/_ValidationScriptsPartial.cshtml",
+      "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/_ViewImports.cshtml",
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Home/Index.cshtml",
-      "TargetPath": "Views\\Home\\Index.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Home/Privacy.cshtml",
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/Privacy.cshtml",
       "TargetPath": "Views\\Home\\Privacy.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/Users/nhannguyen/Desktop/cinemapandas/Views/Home/Home.cshtml",
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/Index.cshtml",
+      "TargetPath": "Views\\Home\\Index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/_Login.cshtml",
+      "TargetPath": "Views\\Home\\_Login.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/NewMovie.cshtml",
+      "TargetPath": "Views\\Home\\NewMovie.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/Home.cshtml",
       "TargetPath": "Views\\Home\\Home.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/Home/_Register.cshtml",
+      "TargetPath": "Views\\Home\\_Register.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "/Users/nhannguyen/Desktop/cinemapandasUpdate/Views/_ViewStart.cshtml",
+      "TargetPath": "Views\\_ViewStart.cshtml",
       "FileKind": "mvc"
     }
   ],
